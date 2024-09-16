@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&family=Sofadi+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    width: 10%;
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    background-color: #d1d1d1;
+    list-style-type: none;
+}
+
+li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 8px 16px;
+    width: 100%;
+}
+
+li:hover:not(.active){
+    background-color: rgb(238, 169, 79);
+    transition: all 0.3s ease-in-out;
+}
+.active{
+    background-color: black;
+}
+
+/* Estilização do conteudo */
+
+.icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.icon img{
+    width: 80px;
+    height: 80px;
+}
+
+.container{
+    margin-left: 12%;
+}
+
+.inicio {
+    width: 100%;
+    text-align: center;
+}
+
+.inicio h1, h2, h3{
+    font-family: "Sofadi One", system-ui;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #000000;
+}
+
+h2{
+    font-size: 2.3rem;
+    color: #f39c38;
+}
+
+h3  {
+    font-size: 4vh;
+    color: black;
+}
+
+p{
+    font-family:"Playwrite CU";
+    font-size: 2.7vh;
+    margin: 1rem 0;
+}
+
+
+section:not(.inicio){
+    margin: 5rem 0;
+    background-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 20px;
+    color: #000000;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.582), inset 1px 1px 10px rgba(0, 0, 0, 0.382);
+    height: auto;
+}
+section:nth-child(odd){
+    color: #fff;
+}
+
+.poema {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img1{
+    background-image: url(img/pexels-hoinommm-25014778.jpg);
+}
+
+.img2{
+    background-image: url(img/pexels-pixabay-531880.jpg);
+}
+.img3{
+    background-image: url(img/pexels-ravikant-2877338.jpg);
+}
+.img4{
+    background-image: url(img/pexels-rozegold-2422896.jpg);    
+}
+
+.img2 h3, .img4 h3 {
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+}
+
+footer p{
+    margin-left: 10%;
+}
+
+@media (max-width: 950px){
+    ul{
+        width: 20%;
+    }
+    
+    .container{
+        margin-left: 25%;
+        margin-right: 2%;
+    }
+}
