@@ -107,7 +107,7 @@ section:nth-child(odd){
 
 .img2{
     background-image: url(img/pexels-pixabay-531880.jpg);
-    background-position: left;
+
 }
 .img3{
     background-image: url(img/pexels-ravikant-2877338.jpg);
@@ -132,6 +132,10 @@ footer p{
 @media (max-width: 950px){
     ul{
         width: 20%;
+    }
+
+    .img2 {
+        background-position: right;
     }
     
     .container{
